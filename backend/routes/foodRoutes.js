@@ -1,5 +1,5 @@
 import express from 'express'
-import { FoodController } from '../controllers/FoodController.js'
+import { FoodController } from '../controllers/foodController.js'
 import upload from '../config/multerConfig.js'
 
 const router = express.Router()

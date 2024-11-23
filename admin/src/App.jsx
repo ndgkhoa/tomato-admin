@@ -14,10 +14,10 @@ const App = () => {
             <ToastContainer />
             <Navbar />
             <hr />
-            <div className="app-content">
+            <div className="app">
                 <Sidebar />
                 <Routes>
-                <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/add" element={<Add />} />
                     <Route path="/list" element={<List />} />
                     <Route path="/orders" element={<Orders />} />

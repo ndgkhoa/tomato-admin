@@ -1,5 +1,5 @@
 import fs from 'fs'
-import Food from '../models/Food.js'
+import Food from '../models/food.js'
 
 export const FoodController = {
     createFood: async (req, res) => {
@@ -21,9 +21,9 @@ export const FoodController = {
             })
         } catch (error) {
             console.error('Error creating food:', error)
-            res.status(400).json({
+            res.status(500).json({
                 success: false,
-                message: 'Error creating food',
+                message: 'Failed to create food',
                 error: error.message,
             })
         }
