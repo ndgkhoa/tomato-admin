@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema(
             default: 'user',
         },
     },
-    { timestamps: true },
+    { minimize: false, timestamps: true },
 )
 
 const User = mongoose.models.User || mongoose.model('User', userSchema)
